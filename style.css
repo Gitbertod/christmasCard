@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jacquard+24&family=Space+Grotesk:wght@300..700&display=swap");
+body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* align-items: center; */
+  background: linear-gradient(135deg, #921f02, #4e1b1b);
+  
+  position: relative;
+}
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 85px;
+  margin-top: 0px;
+}
+.rain {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.parallax {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+.layer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+.logo-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.top {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+}
+.bottom{
+  width: 100%;
+}
+.logo {
+  max-width: 500px;
+  margin-left: 25px;
+  margin-right: 25px;
+  height: auto;
+}
+.parrafo {
+  font-family: "Great Vibes", cursive;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  max-width: 70%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  100% {
+    transform: translateY(100vh) translateX(var(--translateX, 0));
+  }
+}
+.raindrop {
+  position: absolute;
+  top: -10vh; /* Start off-screen */
+  background: #fff;
+  animation: drop linear infinite;
+}
+.layer1 {
+  --translateX: -10px;
+  animation-duration: 10s;
+}
+.layer2 {
+  --translateX: -5px;
+  animation-duration: 8s;
+}
+.layer3 {
+  --translateX: 5px;
+  animation-duration: 6s;
+}
+.layer4 {
+  --translateX: 10px;
+  animation-duration: 4s;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    
+  }
+  .great-vibes-regular {
+    font-size: 40px;
+  }
+  .parrafo {
+    font-size: 20px;
+    max-width: 90%;
+  }
+  .logo {
+    max-width: 80%;
+    margin: 10px;
+  }
+}
