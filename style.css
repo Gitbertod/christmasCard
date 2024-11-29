@@ -4,7 +4,7 @@ body {
   height: auto;
   display: flex;
   justify-content: center; /* align-items: center; */
-  background: linear-gradient(135deg, #921f02, #4e1b1b);
+  background-color: #861625;
   position: relative;
 }
 .great-vibes-regular {
@@ -16,6 +16,16 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
+
+
+.parkinsans-uniquifier {
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
 .rain {
   position: absolute;
   width: 100%;
